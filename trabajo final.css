@@ -1,0 +1,65 @@
+.gradient-custom {
+    background-color: #0069A3;
+}
+
+section {
+    bottom: 60px;
+    background-color: #0069A3;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+}
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  scroll-behavior: smooth;
+}
+
+/* Header con imagen de fondo */
+.bg-header {
+  background-image: url('https://source.unsplash.com/1600x500/?abstract,art');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Sobreposición de color en el header */
+header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Imagenes */
+.card-img-top {
+  transition: transform 0.3s ease-in-out;
+}
+.card-img-top:hover {
+  transform: scale(1.05);
+}
+
+/* Formulario */
+form input, form textarea {
+  border-radius: 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  background-color: #222;
+}
+
+/* Responsive ajuste */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}
